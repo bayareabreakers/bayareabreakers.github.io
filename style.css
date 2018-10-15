@@ -1,3 +1,13 @@
+@font-face {
+	font-family: Roboto;
+	src: url(Roboto-BoldItalic.ttf);
+}
+
+@font-face {
+	font-family: Oswald;
+	src: url(Oswald-Light.ttf);
+}
+
 body {
 	background-repeat: no-repeat;
 	background-position: center;
@@ -32,17 +42,15 @@ body {
 }
 
 .title {
-	font-family: 'Roboto', sans-serif;
-	font-weight: bold;
+	font-family: Roboto, sans-serif;
 }
 
 p {
-	font-family: 'Oswald', sans-serif;
+	font-family: Oswald, sans-serif;
 }
 
 #name p{
-	font-family: 'Roboto', sans-serif;
-	font-weight: bold;
+	font-family: Roboto, sans-serif;
 }
 
 #name {
