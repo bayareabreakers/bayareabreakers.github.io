@@ -42,8 +42,8 @@ body {
 .basic {
 	background-color: white;
 	opacity: 0.8;
-	padding: 12px 28px;
-	margin-top: 32px;
+	padding: 8px 24px;
+	margin-top: 24px;
 }
 
 .nomargin {
@@ -64,6 +64,11 @@ body {
 
 p {
 	font-family: Oswald, sans-serif;
+}
+
+.basic p {
+  margin-top:8px;
+  margin-bottom: 8px;
 }
 
 .primary {
@@ -89,7 +94,7 @@ p {
 	background-color: white;
 	opacity: 0.8;
 	padding: 12px 28px;
-	margin-top: 32px;
+	margin-top: 24px;
 	width: 90%;
 	margin-left:-14px;
 }
