@@ -1,86 +1,115 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 	<head>
-		<link rel="shortcut icon" type="image/png" href="https://www.emoji.co.uk/files/apple-emojis/animals-nature-ios/353-water-wave.png"/>
-		<script src="./scripts.js"></script>
-		<link rel="stylesheet" text="text/css" href="style.css"/>
-		<link href="https://fonts.googleapis.com/css?family=Oswald:300|Roboto:900i" rel="stylesheet">
-		<title>The Bay Area Breakers Quidditch Club</title>
-	</head>
-	<body>
+		<title>Bay Area Breakers</title>
+		<link rel="shortcut icon" type="image/png" href="./BayAreaBreakers.png"/>
+		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<div id="covering">
-			<div id="deets">
-				<div id="name">
-					<p>BAY AREA BREAKERS<br>
-					QUIDDITCH CLUB</p>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+		<link href="https://fonts.googleapis.com/css?family=Montserrat|Yellowtail" rel="stylesheet">
+		<link rel="stylesheet" href="style2.css">
+	</head>
+	<body data-spy="scroll" data-target=".navbar" data-offset="50" id="custom">
+		<header>
+			<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+				<a class="navbar-brand" href="#about">
+					<img src="./BayAreaBreakers.png" width="20" class="d-inline-block align-center"/>
+					Bay Area Breakers
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#submenu" aria-controls="submenu" aria-expanded="false">
+	    			<span class="navbar-toggler-icon"></span>
+	  			</button>
+					<div class="collapse navbar-collapse" id="submenu">
+						<ul class="navbar-nav mr-auto">
+							<li class="nav-item"><a class="nav-link" href="#practices">Open Practices</a></li>
+							<li class="nav-item"><a class="nav-link" href="#scores">Season Scores</a></li>
+							<li class="nav-item"><a class="nav-link" href="#roster">Roster</a></li>
+							<li class="nav-item"><a class="nav-link" disabled" href="#contact">Send Us A Wave</a></li>
+						</ul>
+					</div>
 				</div>
-				<div class="carousel">
-			        <ul class="slides">
-			            <input type="radio" name="radio-buttons" id="img-1" checked />
-			            <li class="slide-container">
-			                <div class="slide-image">
-			                    <p class="title">About Us</p>
-			                    <p>The Bay Area Breakers are a San Francisco Bay Area based, community quidditch team, established in September 2018.</p>
-			                    <p>Quidditch is an all-gender full-contact sport inspired by the magical sport in Harry Potter. It is a blend of rugby, basketball, and soccer.</p>
-			                </div>
-			            </li>
-			            <input type="radio" name="radio-buttons" id="img-2" />
-			            <li class="slide-container">
-			                <div class="slide-image">
-			                    <p class="title">Open Practice Information</p>
-			                    <p class="primary">Thursdays 7-9pm</p>
-			                    <p>El Camino Park // Palo Alto, CA</p>
-			                    <p class="primary">Saturdays 1-4pm</p>
-			                    <p>Rengstorff Park // Mountain View, CA</p>
-			                </div>
-			            </li>
-			            <input type="radio" name="radio-buttons" id="img-3" />
-			            <li class="slide-container">
-			                <div class="slide-image">
-			                    <p class="title">Norcal By Northwest</p>
-			                    <p class="primary">First Place</p>
-			                    <br>
-			                    <p class="secondary">VS Rain City Raptors</p>
-			                    <p class="secondary">120*-90</p>
-			                    <p class="secondary">VS Western Washington Wyverns</p>
-			                	<p class="secondary">160-30*</p>
-			                    <p class="secondary">VS Cascadia Quidditch</p>
-			                    <p class="secondary">100*-30</p>
-			                </div>
-			            </li>
-			            <input type="radio" name="radio-buttons" id="img-4" />
-			            <li class="slide-container">
-			                <div class="slide-image">
-			                    <p class="title">Skrewts Memorial Cup</p>
-			                    <p class="primary">Second Place</p>
-			                    <br>
-			                    <p class="secondary">VS The Lost Boys</p>
-			                    <p class="secondary">150*-100</p>
-			                    <p class="secondary">VS Anteater Quidditch</p>
-			                    <p class="secondary">150*-50</p>
-			                    <p class="secondary">VS The Long Beach Funky Quaffles</p>
-			                    <p class="secondary">160*-140</p>
-			                    <p class="secondary">[FINALS] VS The Long Beach Funky Quaffles</p>
-			                    <p class="secondary">100-120*</p>
-			                </div>
-			            </li>
-			            <div class="carousel-dots">
-			                <label for="img-1" class="carousel-dot" id="img-dot-1"></label>
-			                <label for="img-2" class="carousel-dot" id="img-dot-2"></label>
-			                <label for="img-3" class="carousel-dot" id="img-dot-3"></label>
-			                <label for="img-4" class="carousel-dot" id="img-dot-4"></label>
-			            </div>
-			        </ul>
-			    </div>
-				<div class="basic" id="contact">
-					<p class="title"> Say Hello</p>
-					<p>send.a.wave@bayareabreakers.com</p>
-					<p class="title mini">
-						<span class="social media"><a href="https://www.facebook.com/BayAreaBreakersQC">Facebook</a></span> | 
-						<span class="social media"><a href="https://www.instagram.com/BayAreaBreakers">Instagram</a></span>
-					</p>
-				</div>
+			</nav>
+		</header>
+
+		<div class="container-fluid dark" id="about">
+			<div class="container">
+				<h1>Bay Area Breakers</h1> 
+				<p>The Bay Area Breakers are a community quidditch club based in the San Francisco Bay Area, established in September 2018.</p> 
+				<p>Quidditch is an all-gender full-contact sport inspired by the magical sport in Harry Potter. It is a blend of rugby, basketball, and soccer.</p>
 			</div>
+		</div>
+
+		<div class="container-fluid" id="practices">
+			<div class="container">
+				<h2>Open Practices</h2>
+				<h3>Thursdays</h3>
+				<p>7pm - 9pm</p>
+				<p>El Camino Park, Palo Alto, CA</p>
+				<h3>Saturdays</h3>
+				<p>1pm - 4pm</p>
+				<p>Rengstorff Park, Mountain View, CA</p>
+			</div>
+		</div>
+
+		<div id="scores"></div>
+		<div class="container-fluid" class="dark" id="ncxnw">
+			<div class="dark container" >
+				<h2>Norcal By Northwest <br><small>Portland, OR</small></h2>
+				<h3>Pool Play</h3>
+				<p><span class="us">120*</span> - <span class="them">90</span><br><span class="against">Rain City Raptors</span></p>
+				<p><span class="us">160</span> - <span class="them">30*</span><br><span class="against">Western Washington Wyverns</span></p>
+				<p><span class="us">100*</span> - <span class="them">30</span><br><span class="against">Cascadia Quidditch</span></p>
+			</div>
+		</div>
+		<div class="container-fluid" id="smc">
+			<div class="container">
+				<h2>Skrewts Memorial Cup <br><small>San Jose, CA</small></h2>
+				<h3>Pool Play</h3>
+				<p><span class="us">150*</span> - <span class="them">100</span><br><span class="against">The Lost Boys</span></p>
+				<p><span class="us">150*</span> - <span class="them">50</span><br><span class="against">Anteater Quidditch</span></p>
+				<p><span class="us">160*</span> - <span class="them">140</span><br><span class="against">The Long Beach Funky Quaffles</span></p>
+				<h3>Finals</h3>
+				<p><span class="us">100</span> - <span class="them">120*</span><br><span class="against">The Long Beach Funky Quaffles</span></p>
+			</div>
+		</div>
+
+		<div class="container-fluid dark" id="roster">
+			<div class="container">
+				<h2>Roster</h2>
+				<p><small class="number">#4</small>Duran Allison <small>  |  Team Manager </small></p>
+				<p><small class="number">#27</small>Shirley Lu <small>  | Team Manager</small></p>
+				<p><small class="number">#77</small>Rocio Salas <small>  |  Social Media</small></p>
+				<p><small class="number">#51</small>Sam Harris <small>  |  Captain</small></p>
+				<p><small class="number">#88</small>Hugo Quiroz <small>  |  Captain</small></p>
+				<p></p>
+				<p><small class="number">#35</small>Andrew Covel</p>
+				<p><small class="number">#26</small>Misa Elizondo</p>
+				<p><small class="number">#42</small>Marissa Hondros</p>
+				<p><small class="number">#15</small>Ra Hopkins</p>
+				<p><small class="number">#31</small>Sam Le Beau</p>
+				<p><small class="number">#13</small>Lorena Medrano Osorio</p>
+				<p><small class="number">#22</small>Willis Andrew Miles IV</p>
+				<p><small class="number">#21</small>Frank Nolin</p>
+				<p><small class="number">#7</small>Fredy Ramirez</p>
+				<p><small class="number">#1</small>Luke Raus</p>
+				<p><small class="number">#99</small>Chewy Shaw</p>
+				<p><small class="number">#82</small>Forrest Stone</p>
+				<p><small class="number">#6</small>Madeline Timm</p>
+				<p><small class="number">#28</small>John Vong</p>
+			</div>
+		</div>
+
+		<div class="container" id="contact">
+			<h1>Send us a wave</h1>
+			<h3>Email</h3>
+			<p><a href="mailto:send.a.wave@bayareabreakers.com"> send.a.wave@bayareabreakers.com</a></p>
+			<h3>Facebook</h3>
+			<p><a href="https://www.facebook.com/BayAreaBreakersQC">f/BayAreaBreakersQC</a></p>
+			<h3>Instagram</h3>
+			<p><a href="https://www.instagram.com/BayAreaBreakers">@BayAreaBreakers</a></p>
 		</div>
 	</body>
 </html>
