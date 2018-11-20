@@ -1,5 +1,6 @@
 body {
     font-family: 'Montserrat', sans-serif;
+    color:white;
 }
 
 h1 {
@@ -13,28 +14,7 @@ h2 {
 }
 
 h3 {
-    font-size:20px;
     color: #ff9d00;
-}
-
-p {
-    margin-left:32px;
-}
-
-.us {
-    display: inline-block;
-    width: 32px;
-}
-
-.them {
-    display: inline-block;
-    width: 32px;
-    margin-left: 8px
-}
-
-.against {
-    margin-left:32px;
-
 }
 
 .dark h2 {
@@ -49,57 +29,17 @@ p {
     color: #213b72;
 }
 
-.hero {
-    position: relative;
+.container-fluid {
     z-index: 1;
     background-color: #333;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    color: white;
+    padding:0;
 }
 
-#about {
-    background-image: url("./about.jpg");
-    height: 550px;
-}
-
-#practices {
-    background-color: white;
-    color: black;
-    height: 600px;
-}
-
-#ncxnw {
-    background-image: url("./ncxnw.jpg");
-    height: 600px;
-}
-
-#smc {
-    height: 700px;
-    background-color: white;
-    color: black;
-}
-
-#roster {
-    background-image: url("https://www.publicdomainpictures.net/pictures/280000/nahled/background-waves-wave-texture-1538143829l0J.jpg");
-    height: 1000px;
-}
-
-.number {
-    display: inline-block;
-    width:32px;
-}
-
-#contact {
-    background-color: white;
-    color: black;
-    height: 450px;
-}
-
-
-.hero .cover {
-    position: absolute;
+.container-fluid .cover {
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -108,27 +48,338 @@ p {
     background: rgba(0,0,0,.6);
 }
 
-.hero .overlay {
-    position: absolute;
-    z-index: 999;
-    top: 30%;
-    width: 100%;
-    transform: translateY(-30%);
+
+
+/* BACKGROUNDS */
+
+#about {
+    background-image: url("./about.jpg");
 }
 
-#about .overlay {
-    top: 50%;
+#practices {
+    background-color: white;
+    color: black;
 }
 
-.hero .overlay {
-    width: 50%;
-    margin-left: 25%;
+#ncxnw {
+    background-image: url("./ncxnw.jpg");
 }
 
-.hero h1 {
-    font-size: 60px;
+#smc {
+    background-color: white;
+    color: black;
 }
 
+#roster {
+    background-image: url("roster.jpg");
+}
 
+#contact {
+    background-color: white;
+    color: black;
+}
 
+/* SCORES */
+.us {
+    display: inline-block;
+}
 
+.them {
+    display: inline-block;
+}
+
+/* ROSTER */
+
+.number {
+    display: inline-block;
+}
+
+/* MEDIA */
+
+@media (max-width:575px) {
+    h1 {
+        font-size:40px;
+    }
+
+    h2 {
+        font-size:24px;
+    }
+
+    h3 {
+        font-size:14px;
+    }
+    
+    .navbar-brand {
+        font-size:14px;
+    }
+
+    .nav-item {
+        font-size:14px;
+    }
+
+    p {
+        font-size:14px;
+        margin-left:20px;
+    } 
+
+    .container {
+        padding:40px;
+    }
+
+    #about {
+        padding-top: 160px;
+    }
+
+    /* SCORES */
+    .us {
+        display: inline-block;
+        width: 24px;
+    }
+
+    .them {
+        display: inline-block;
+        width: 24px;
+        margin-left: 6px
+    }
+
+    /* ROSTER */
+
+    .number {
+        width: 28px;
+    }
+}
+
+@media (min-width: 576px) { 
+    h1 {
+        font-size:40px;
+    }
+
+    h2 {
+        font-size:24px;
+    }
+
+    h3 {
+        font-size:14px;
+    }
+
+    br {
+        display:none;
+    }
+    
+    .navbar-brand {
+        font-size:14px;
+    }
+
+    .nav-item {
+        font-size:14px;
+    }
+
+    p {
+        font-size:14px;
+        margin-left:20px;
+    } 
+
+    .container {
+        padding:40px;
+    }
+
+    #about {
+        padding-top: 160px;
+    }
+
+    /* SCORES */
+    .us {
+        display: inline-block;
+        width: 24px;
+    }
+
+    .them {
+        display: inline-block;
+        width: 24px;
+        margin-left: 6px
+    }
+
+    .against {
+        margin-left:16px;
+
+    }
+
+    /* ROSTER */
+
+    .number {
+        width: 28px;
+    }
+}
+
+@media (min-width: 768px) { 
+    h1 {
+        font-size:40px;
+    }
+
+    h2 {
+        font-size:24px;
+    }
+
+    h3 {
+        font-size:14px;
+    }
+
+    br {
+        display:none;
+    }
+    
+    .navbar-brand {
+        font-size:14px;
+    }
+
+    .nav-item {
+        font-size:14px;
+    }
+
+    p {
+        font-size:14px;
+        margin-left:20px;
+    } 
+
+    .container {
+        padding:40px;
+    }
+
+    #about {
+        padding-top: 160px;
+    }
+
+    /* SCORES */
+    .us {
+        display: inline-block;
+        width: 24px;
+    }
+
+    .them {
+        display: inline-block;
+        width: 24px;
+        margin-left: 6px
+    }
+
+    .against {
+        margin-left:16px;
+
+    }
+
+    /* ROSTER */
+
+    .number {
+        width: 28px;
+    }
+}
+
+@media (min-width: 992px) { 
+    h1 {
+        font-size:48px;
+    }
+
+    h2 {
+        font-size:28px;
+    }
+
+    h3 {
+        font-size:18px;
+    }
+
+    br {
+        display:none;
+    }
+    
+    .navbar-brand {
+        font-size:18px;
+    }
+
+    .nav-item {
+        font-size:14px;
+    }
+
+    p {
+        font-size:14px;
+        margin-left:28px;
+    } 
+
+    .container {
+        padding:40px;
+    }
+
+    #about {
+        padding-top: 160px;
+    }
+
+    /* SCORES */
+    .us {
+        display: inline-block;
+        width: 24px;
+    }
+
+    .them {
+        display: inline-block;
+        width: 24px;
+        margin-left: 6px
+    }
+
+    .against {
+        margin-left:24px;
+
+    }
+
+    /* ROSTER */
+
+    .number {
+        width: 28px;
+    }
+}
+
+@media (min-width: 1200px) {
+    h3 {
+        font-size:20px;
+    }
+    
+    p {
+        margin-left:32px;
+    } 
+
+    br {
+        display:none;
+    }
+
+    .container {
+        padding:50px;
+    }
+
+    #about {
+        padding-top: 200px;
+    }
+
+    #about h1 {
+        font-size: 60px;
+    }
+
+    /* SCORES */
+    .us {
+        display: inline-block;
+        width: 32px;
+    }
+
+    .them {
+        display: inline-block;
+        width: 32px;
+        margin-left: 8px
+    }
+
+    .against {
+        margin-left:32px;
+
+    }
+
+    /* ROSTER */
+
+    .number {
+        width: 32px;
+    }
+}

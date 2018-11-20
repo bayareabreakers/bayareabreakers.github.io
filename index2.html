@@ -5,34 +5,45 @@
 		<link rel="shortcut icon" type="image/png" href="./BayAreaBreakers.png"/>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		<link rel="stylesheet" href="style2.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 		<link href="https://fonts.googleapis.com/css?family=Montserrat|Yellowtail" rel="stylesheet">
+		<link rel="stylesheet" href="style2.css">
 	</head>
-	<body data-spy="scroll" data-target=".navbar" data-offset="50">
+	<body data-spy="scroll" data-target=".navbar" data-offset="50" id="custom">
+		<header>
+			<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+				<a class="navbar-brand" href="#about">
+					<img src="./BayAreaBreakers.png" width="20" class="d-inline-block align-center"/>
+					Bay Area Breakers
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#submenu" aria-controls="submenu" aria-expanded="false">
+	    			<span class="navbar-toggler-icon"></span>
+	  			</button>
+					<div class="collapse navbar-collapse" id="submenu">
+						<ul class="navbar-nav mr-auto">
+							<li class="nav-item"><a class="nav-link" href="#practices">Open Practices</a></li>
+							<li class="nav-item"><a class="nav-link" href="#scores">Season Scores</a></li>
+							<li class="nav-item"><a class="nav-link" href="#roster">Roster</a></li>
+							<li class="nav-item"><a class="nav-link" disabled" href="#contact">Send Us A Wave</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
 
-		<nav class="navbar navbar-inverse navbar-fixed-top">
-			<ul class="nav navbar-nav">
-    			<li><a href="#about"><img type="image/png" src="./BayAreaBreakers.png" height="20"/>  Bay Area Breakers</a></li>
-    			<li><a href="#practices">Open Practices</a></li>
-    			<li><a href="#scores">Season Scores</a></li>
-    			<li><a href="#roster">Roster</a></li>
-    			<li><a href="#contact">Send Us A Wave</a></li>
-		</nav>
-
-		<div class="hero dark" id="about">
-			<div class="cover"></div>
-			<div class="overlay">
+		<div class="container-fluid dark" id="about">
+			<div class="container">
 				<h1>Bay Area Breakers</h1> 
 				<p>The Bay Area Breakers are a community quidditch club based in the San Francisco Bay Area, established in September 2018.</p> 
 				<p>Quidditch is an all-gender full-contact sport inspired by the magical sport in Harry Potter. It is a blend of rugby, basketball, and soccer.</p>
 			</div>
 		</div>
 
-		<div class="hero" id="practices">
-			<div class="overlay">
+		<div class="container-fluid" id="practices">
+			<div class="container">
 				<h2>Open Practices</h2>
 				<h3>Thursdays</h3>
 				<p>7pm - 9pm</p>
@@ -43,42 +54,37 @@
 			</div>
 		</div>
 
-		<div id="scores">
-			<div class="hero dark" id="ncxnw">
-				<div class="cover"></div>
-				<div class="overlay">
-					<h2>Norcal By Northwest <small>Portland, OR</small></h2>
-					<h3>Pool Play</h3>
-					<p><span class="us">120*</span> - <span class="them">90</span><span class="against">Rain City Raptors</span></p>
-					<p><span class="us">160</span> - <span class="them">30*</span><span class="against">Western Washington Wyverns</span></p>
-					<p><span class="us">100*</span> - <span class="them">30</span><span class="against">Cascadia Quidditch</span></p>
-				</div>
+		<div id="scores"></div>
+		<div class="container-fluid" class="dark" id="ncxnw">
+			<div class="dark container" >
+				<h2>Norcal By Northwest <br><small>Portland, OR</small></h2>
+				<h3>Pool Play</h3>
+				<p><span class="us">120*</span> - <span class="them">90</span><br><span class="against">Rain City Raptors</span></p>
+				<p><span class="us">160</span> - <span class="them">30*</span><br><span class="against">Western Washington Wyverns</span></p>
+				<p><span class="us">100*</span> - <span class="them">30</span><br><span class="against">Cascadia Quidditch</span></p>
 			</div>
-
-			<div class="hero" id="smc">
-				<!-- <div class="cover"></div> -->
-				<div class="overlay">
-					<h2>Skrewts Memorial Cup <small>San Jose, CA</small></h2>
-					<h3>Pool Play</h3>
-					<p><span class="us">150*</span> - <span class="them">100</span><span class="against">The Lost Boys</span></p>
-					<p><span class="us">150*</span> - <span class="them">50</span><span class="against">Anteater Quidditch</span></p>
-					<p><span class="us">160*</span> - <span class="them">140</span><span class="against">The Long Beach Funky Quaffles</span></p>
-					<h3>Finals</h3>
-					<p><span class="us">100</span> - <span class="them">120*</span><span class="against">The Long Beach Funky Quaffles</span></p>
-				</div>
+		</div>
+		<div class="container-fluid" id="smc">
+			<div class="container">
+				<h2>Skrewts Memorial Cup <br><small>San Jose, CA</small></h2>
+				<h3>Pool Play</h3>
+				<p><span class="us">150*</span> - <span class="them">100</span><br><span class="against">The Lost Boys</span></p>
+				<p><span class="us">150*</span> - <span class="them">50</span><br><span class="against">Anteater Quidditch</span></p>
+				<p><span class="us">160*</span> - <span class="them">140</span><br><span class="against">The Long Beach Funky Quaffles</span></p>
+				<h3>Finals</h3>
+				<p><span class="us">100</span> - <span class="them">120*</span><br><span class="against">The Long Beach Funky Quaffles</span></p>
 			</div>
 		</div>
 
-		<div class="hero dark" id="roster">
-			<div class="cover"></div>
-			<div class="overlay">
+		<div class="container-fluid dark" id="roster">
+			<div class="container">
 				<h2>Roster</h2>
 				<p><small class="number">#4</small>Duran Allison <small>  |  Team Manager </small></p>
 				<p><small class="number">#27</small>Shirley Lu <small>  | Team Manager</small></p>
 				<p><small class="number">#77</small>Rocio Salas <small>  |  Social Media</small></p>
 				<p><small class="number">#51</small>Sam Harris <small>  |  Captain</small></p>
 				<p><small class="number">#88</small>Hugo Quiroz <small>  |  Captain</small></p>
-				<br>
+				<p></p>
 				<p><small class="number">#35</small>Andrew Covel</p>
 				<p><small class="number">#26</small>Misa Elizondo</p>
 				<p><small class="number">#42</small>Marissa Hondros</p>
@@ -96,16 +102,14 @@
 			</div>
 		</div>
 
-		<div class="hero" id="contact">
-			<div class="overlay">
-				<h1>Send us a wave</h1>
-				<h3>Email</h3>
-				<p><a href="mailto:send.a.wave@bayareabreakers.com"> send.a.wave@bayareabreakers.com</a></p>
-				<h3>Facebook</h3>
-				<p><a href="https://www.facebook.com/BayAreaBreakersQC">f/BayAreaBreakersQC</a></p>
-				<h3>Instagram</h3>
-				<p><a href="https://www.instagram.com/BayAreaBreakers">@BayAreaBreakers</a></p>
-			</div>
+		<div class="container" id="contact">
+			<h1>Send us a wave</h1>
+			<h3>Email</h3>
+			<p><a href="mailto:send.a.wave@bayareabreakers.com"> send.a.wave@bayareabreakers.com</a></p>
+			<h3>Facebook</h3>
+			<p><a href="https://www.facebook.com/BayAreaBreakersQC">f/BayAreaBreakersQC</a></p>
+			<h3>Instagram</h3>
+			<p><a href="https://www.instagram.com/BayAreaBreakers">@BayAreaBreakers</a></p>
 		</div>
 	</body>
 </html>
