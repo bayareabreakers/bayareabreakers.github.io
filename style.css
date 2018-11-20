@@ -127,11 +127,18 @@ small {
     } 
 
     .container {
-        padding:40px;
+        padding:30px;
+        padding-bottom:100px;
     }
 
     #about {
         padding-top: 160px;
+        padding-bottom:60px;
+    }
+
+    #about .container {
+        padding-top: 0px;
+        padding-bottom: 0px;
     }
 
     /* SCORES */
@@ -184,12 +191,20 @@ small {
     } 
 
     .container {
-        padding:40px;
+        padding-top:30px;
+        padding-bottom:100px;
     }
 
     #about {
         padding-top: 160px;
+        padding-bottom:60px;
     }
+
+    #about .container {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
 
     /* SCORES */
     .us {
@@ -246,11 +261,18 @@ small {
     } 
 
     .container {
-        padding:40px;
+        padding-top:40px;
+        padding-bottom:120px;
     }
 
     #about {
         padding-top: 160px;
+        padding-bottom:60px;
+    }
+
+    #about .container {
+        padding-top: 0px;
+        padding-bottom: 0px;
     }
 
     /* SCORES */
@@ -308,11 +330,18 @@ small {
     } 
 
     .container {
-        padding:40px;
+        padding-top:60px;
+        padding-bottom:160px;
     }
 
     #about {
-        padding-top: 160px;
+        padding-top: 200px;
+        padding-bottom:60px;
+    }
+
+    #about .container {
+        padding-top: 0px;
+        padding-bottom: 0px;
     }
 
     /* SCORES */
@@ -353,11 +382,18 @@ small {
     }
 
     .container {
-        padding:250px;
+        padding-top:80px;
+        padding-bottom:200px;
     }
 
     #about {
         padding-top: 200px;
+        padding-bottom:80px;
+    }
+
+    #about .container {
+        padding-top: 0px;
+        padding-bottom: 0px;
     }
 
     #about h1 {
