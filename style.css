@@ -74,6 +74,14 @@ small {
     color: black;
 }
 
+#anthill {
+    background-image: url("./anthill.jpg");
+}
+
+.photocredit {
+    text-align: right;
+}
+
 #roster {
     background-image: url("roster.jpg");
 }
