@@ -153,12 +153,13 @@ small {
     .us {
         display: inline-block;
         width: 24px;
+        margin-right: 6px;
     }
 
     .them {
         display: inline-block;
         width: 24px;
-        margin-left: 6px
+        margin-left: 3px
     }
 
     /* ROSTER */
@@ -218,12 +219,13 @@ small {
     .us {
         display: inline-block;
         width: 24px;
+        margin-right: 6px;
     }
 
     .them {
         display: inline-block;
         width: 24px;
-        margin-left: 6px
+        margin-left: 3px
     }
 
     .against {
@@ -287,12 +289,13 @@ small {
     .us {
         display: inline-block;
         width: 24px;
+        margin-right: 6px;
     }
 
     .them {
         display: inline-block;
         width: 24px;
-        margin-left: 6px
+        margin-left: 3px
     }
 
     .against {
@@ -356,12 +359,13 @@ small {
     .us {
         display: inline-block;
         width: 24px;
+        margin-right: 6px;
     }
 
     .them {
         display: inline-block;
         width: 24px;
-        margin-left: 6px
+        margin-left: 3px
     }
 
     .against {
@@ -412,12 +416,13 @@ small {
     .us {
         display: inline-block;
         width: 32px;
+        margin-right: 8px;
     }
 
     .them {
         display: inline-block;
         width: 32px;
-        margin-left: 8px
+        margin-left: 4px
     }
 
     .against {
