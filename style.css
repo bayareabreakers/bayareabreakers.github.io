@@ -86,6 +86,31 @@ small {
     background-image: url("roster.jpg");
 }
 
+#wrc {
+    background-image: url("./wrc.jpg");
+}
+
+#usqc {
+    background-color: white;
+    color: black;
+}
+
+#desc {
+    margin-left: 60px;
+}
+
+#desc br {
+    display: inline;
+}
+
+#usqc img{
+    width:320px;
+}
+
+.item {
+    margin-bottom: 16px;
+}
+
 #contact {
     background-color: white;
     color: black;
