@@ -17,6 +17,11 @@ h3 {
     color: #ff9d00;
 }
 
+.times {
+    text-align: center;
+    color: #213b72;
+}
+
 .dark h2 {
     color: #59cbf5;
 }
