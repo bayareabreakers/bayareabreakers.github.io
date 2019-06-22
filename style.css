@@ -13,6 +13,10 @@ h2 {
     color: #213b72;
 }
 
+a {
+    color: #59cbf5;
+}
+
 h3 {
     color: #ff9d00;
 }
@@ -85,6 +89,10 @@ small {
 
 .photocredit {
     text-align: right;
+}
+
+#kidditch {
+    background-image: url("./kidditch.jpg");
 }
 
 #roster {
