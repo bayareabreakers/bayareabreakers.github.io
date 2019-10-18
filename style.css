@@ -74,17 +74,13 @@ small {
     color: black;
 }
 
-#ncxnw {
-    background-image: url("./ncxnw.jpg");
+#neverland {
+    background-image: url("./neverland.jpg");
 }
 
-#smc {
+#ncxnw {
     background-color: white;
     color: black;
-}
-
-#anthill {
-    background-image: url("./anthill.jpg");
 }
 
 .photocredit {
@@ -99,25 +95,12 @@ small {
     background-image: url("roster.jpg");
 }
 
-#wrc {
-    background-image: url("./wrc.jpg");
-}
-
-#usqc {
-    background-color: white;
-    color: black;
-}
-
 #desc {
     margin-left: 60px;
 }
 
 #desc br {
     display: inline;
-}
-
-#usqc img{
-    width:320px;
 }
 
 .item {
