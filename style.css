@@ -74,11 +74,49 @@ small {
     color: black;
 }
 
-#neverland {
-    background-image: url("./neverland.jpg");
+#neverland19 {
+    background-image: url("./2019/neverland.jpg");
 }
 
-#ncxnw {
+#ncxnw19 {
+    background-color: white;
+    color: black;
+}
+
+#lbi19 {
+    background-image: url("./2019/lbi.jpg");
+}
+
+#barcelos19 {
+    background-color: white;
+    color: black;
+}
+
+/* 2018 BACKGROUNDS */
+
+#ncxnw18 {
+    background-image: url("./2018/ncxnw18.jpg");
+}
+
+#smc18 {
+    background-color: white;
+    color: black;
+}
+
+#anthill18 {
+    background-image: url("./2018/anthill18.jpg");
+}
+
+#bb18 {
+    background-color: white;
+    color: black;
+}
+
+#wrc18 {
+    background-image: url("./2018/wrc18.jpg");
+}
+
+#usqc18 {
     background-color: white;
     color: black;
 }
